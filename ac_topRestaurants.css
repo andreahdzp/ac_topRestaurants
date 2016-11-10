@@ -9,10 +9,6 @@ h1, h2, h3, h4, h5, h6, a, td {
   padding: 0;
 }
 
-nav, section, table {
-  width:70%;
-}
-
 h1, h3 {
   color: #FFF;
   font-family: 'PT Serif', serif;
@@ -39,9 +35,9 @@ h4 {
 
 p {
   font-family: 'PT Sans', sans-serif;
-  width: 80%;
+  width: 55%;
   padding: 0 0 30px 0;
-  margin: 0 auto;
+  /*margin: 0 2%;*/
   line-height: 22px;
 }
 
@@ -55,9 +51,24 @@ a:visited {
   color: #424A59;
 }
 
-nav, table {
+nav a {
+  color: #FFF;
+}
+
+nav a:visited {
+  color: #7765E3;
+}
+
+nav ul {
+  list-style: none;
+  padding: 5px 5%;
+  margin: 0;
+}
+
+table {
   margin: 0 auto;
   text-align: center;
+  width:70%;
 }
 
 header {
@@ -67,19 +78,46 @@ header {
 
 section {
   background-color: #FFFFFF;
-  margin: 15px auto;
+  /*margin: 15px;*/
   border: #33658A 2px solid;
 }
 
-img {
-  width: 300px;
-  display: block;
-  margin: 0 auto 20 auto;
+section:after {
+    content: " ";
+    display: table;
+    clear: both;
 }
 
-.vertimg {
-  height: 300px;
+#center_content h2 {
+  text-align: right;
+  margin: 0 4% 20px 0;
+}
+
+#right_content h2 {
+  text-align: left;
+  margin: 0 0 20px 4%;
+}
+
+
+img {
+  width: 33%;
+  display: block;
+  /*margin: 0 2%;*/
+}
+
+/*.vertimg {
+  height: 35%;
   width: auto;
+}*/
+
+.left {
+  float: left;
+  margin: 0 2% 20px 4%;
+}
+
+.right {
+  float: right;
+  margin: 0 4% 20px 2%;
 }
 
 footer {
@@ -90,4 +128,24 @@ footer {
 table {
   font-size: 12px;
   margin-bottom: 10px;
+}
+
+#left_content {
+  float: left;
+  width: 15%;
+  background-color: #8693AB;
+  border: #33658A 2px solid;
+  margin: 0 1% 0 3% ;
+}
+
+#center_content {
+  float: left;
+  width: 38%;
+  margin: 0 1% 0 0;
+}
+
+#right_content {
+  float: left;
+  width: 38%;
+  margin: 0 1% 0 0;
 }
